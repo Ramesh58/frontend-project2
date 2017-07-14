@@ -1,0 +1,22 @@
+<body data-ng-controller='BlogDetailController' >
+<div class="row" align="center">
+<div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<div>{{blogPost.title}}</div>
+<span><strong>Created By:</strong>{{blogPost.createdBy.username}}</span>
+<span><strong>Created on:</strong>{{blogPost.createdOn | date:'medium'}}</span>
+</div>
+<div class="panel-body">
+{{blogPost.body}}
+</div>
+
+
+<form>
+<input type="radio" data-ng-model="blogPost.approved" value="true">Approve<br>
+<input type="radio" data-ng-model="blogPost.approved" value="false">Reject<br>
+<button  data-ng-click="updateApproval()" value="update Status">Update</button>
+
+</form>
+</div></div>
+</body>

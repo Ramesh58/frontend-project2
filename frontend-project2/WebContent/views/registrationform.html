@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body data-ng-controller='UserController'>
+<form>
+Enter Firstname<input type="text" ng-model="user.firstname"><br>
+Enter Lastname<input type="text" ng-model="user.lastname"><br>
+Enter Email<input type="text" ng-model="user.email"><br>
+Enter Username<input type="text" ng-model="user.username"><br>
+Enter Password<input type="password" ng-model="user.password"><br>
+Select Role<input type="radio" ng-model="user.role" value="Student">Student<br>
+<input type="radio" ng-model="user.role" value="Alumini">Alumini<br>
+<input type="radio" ng-model="user.role" value="Employee">Employee<br>
+<input type="submit" ng-click="register()"><br>
+</form>
+</body>
+</html>
